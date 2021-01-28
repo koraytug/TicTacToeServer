@@ -1,4 +1,5 @@
 import * as http from "http"
+import { TicTacToe } from "./tic-tac-toe";
 
 export class Server{
     public static init(port: number) {
@@ -11,7 +12,7 @@ export class Server{
         }).on('data', (chunk) => {
         body += chunk;
         }).on('end', () => {
-        const winner= "will be from method";
+        const winner=  TicTacToe.getWinner(body);
         
         response.setHeader("Content-Type", "application/json");
         response.writeHead(200);

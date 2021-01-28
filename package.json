@@ -1,25 +1,33 @@
 {
-  "name": "TicTacToeServer",
+  "name": "tic-tac-toe-server",
   "version": "1.0.0",
   "description": "\"# TicTacToeServer\"",
-  "main": "index.js",
+  "main": "dist/src/app.js",
   "scripts": {
+    "start": "tsc && node dist/src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/koraytug/TicTacToeServer.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "koray tug",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/koraytug/TicTacToeServer/issues"
   },
   "homepage": "https://github.com/koraytug/TicTacToeServer#readme",
   "devDependencies": {
+    "@types/node": "^14.14.22",
     "nodemon": "^2.0.7",
     "ts-node": "^9.1.1",
-    "typescript": "^4.1.3"
+    "typescript": "^4.1.3",
+    "chai": "^4.2.0",
+    "mocha": "^8.1.3",
+    "tslint": "^6.1.3"
+  },
+  "dependencies": {
+    "@types/chai": "^4.2.12",
+    "@types/mocha": "^5.2.0"
   }
 }

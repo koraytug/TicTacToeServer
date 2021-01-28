@@ -9,7 +9,7 @@ export class TicTacToe{
     };
 
     if (!params || params === "") {
-    return result; 
+        return result; 
     }
 
     try {

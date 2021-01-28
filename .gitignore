@@ -1,2 +1,19 @@
-"node_modulers" 
-"node_modules" 
+# dependecies 
+/node_modules
+/.pnp
+.pnp.js
+.vscode
+
+# testing
+/coverage
+
+# produvtion
+/build
+/bin
+/obj
+/dist
+
+# misc
+.DS_Store
+
+npm-debug.log*
